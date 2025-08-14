@@ -1,0 +1,14 @@
+type Permintaan = record {
+	id: nat;
+	namaBarang: text;
+	totalKuantitas: nat;
+	unit: text;
+	jumlahPartisipan: nat;
+	status: text;
+};
+
+service : {
+	getPermintaan: () -> (vec Permintaan) query;
+	tambahPermintaan: (Permintaan) -> ();
+	resetData: () -> ();
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "dfx": "0.20.1",
+  "canisters": {
+    "kawan_umkm_backend": {
+      "type": "motoko",
+      "main": "src/kawan_umkm_backend/main.mo",
+      "candid": "src/kawan_umkm_backend/kawan_umkm_backend.did"
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:4943",
+      "type": "ephemeral"
+    }
+  }
+}
